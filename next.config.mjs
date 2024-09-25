@@ -3,7 +3,8 @@ let assetPrefix = "";
 let basePath = "";
 
 if (isGithubActions) {
-  const repo = process.env.GITHUB_REPOSITORY.replace(/.*?\//, "");
+  // Use optional chaining to safely access GITHUB_REPOSITORY
+  const repo = process.env.GITHUB_REPOSITORY?.replace(/.*?\//, "") || "";
   assetPrefix = `/${repo}/`;
   basePath = `/${repo}`;
 }
@@ -11,13 +12,12 @@ if (isGithubActions) {
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   output: "export",
-  assetPrefix,
-  basePath,
+  assetPrefix: assetPrefix,
+  basePath: basePath,
   images: {
     unoptimized: true,
-    domains: ["*"], // Allow all domains
-    deviceSizes: [320, 420, 768, 1024, 1200], // Adjust as needed
-    minimumCacheTTL: 60, // Set the minimum cache time to 60 seconds
+    deviceSizes: [320, 420, 768, 1024, 1200],
+    minimumCacheTTL: 60,
     remotePatterns: [
       {
         protocol: "https",
@@ -27,8 +27,8 @@ const nextConfig = {
   },
   distDir: "out",
   typescript: {
-    // Ignore TypeScript errors during build
     ignoreBuildErrors: true,
   },
 };
+
 export default nextConfig;
