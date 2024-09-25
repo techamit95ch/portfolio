@@ -1,2 +1,0 @@
-packages:
-  - 'apps/*'  # Assuming your project is under the `apps` directory
