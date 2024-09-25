@@ -1,13 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import {
-  FacebookIcon,
-  GithubIcon,
-  InstagramIcon,
-  LinkedinIcon,
-  TwitterIcon,
-} from "lucide-react";
+import { GithubIcon, LinkedinIcon } from "lucide-react";
 import Link from "next/link";
 import { resumeData } from "~/data/resumeData";
 
@@ -55,7 +49,7 @@ const Footer = () => {
             >
               <GithubIcon className="h-6 w-6" />
             </a>
-            {resumeData.personalInfo.socialLinks.map((link, index) => (
+            {/* {resumeData.personalInfo.socialLinks.map((link, index) => (
               <a
                 key={index}
                 href={link}
@@ -67,7 +61,7 @@ const Footer = () => {
                 {index === 1 && <FacebookIcon className="h-6 w-6" />}
                 {index === 2 && <InstagramIcon className="h-6 w-6" />}
               </a>
-            ))}
+            ))} */}
           </motion.div>
         </div>
         <motion.div
