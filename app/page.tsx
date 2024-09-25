@@ -75,7 +75,7 @@ export default function Home() {
           muted
           className="h-full w-full object-cover opacity-20"
         >
-          <source src="/rand.mp4" type="video/mp4" />
+          <source src={"videos/rand.mp4"} type="video/mp4" />
         </video>
       </div>
       <div className="relative z-10">

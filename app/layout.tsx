@@ -56,7 +56,9 @@ export const metadata: Metadata = {
     "Javascript Developer",
   ],
   themeColor: "#000000",
-  icons: ["../assets/my_picture.png", "../assets/img2.png"],
+  icons: {
+    icon: "./favicon.ico",
+  },
 };
 export default function RootLayout({
   children,

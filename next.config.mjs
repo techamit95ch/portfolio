@@ -29,6 +29,22 @@ const nextConfig = {
   typescript: {
     ignoreBuildErrors: true,
   },
+  webpack: (config, { isServer }) => {
+    // Add custom Webpack loaders for non-JS file types (e.g., mp4)
+    config.module.rules.push({
+      test: /\.(mp4|webm|ogg|mp3|wav|flac|aac)$/, // Add more file extensions as needed
+      use: {
+        loader: "file-loader",
+        options: {
+          publicPath: "/_next/static/media/",
+          outputPath: "static/media/",
+          name: "[name].[hash].[ext]",
+        },
+      },
+    });
+
+    return config;
+  },
 };
 
 export default nextConfig;

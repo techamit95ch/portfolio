@@ -20,7 +20,8 @@ const Hero = () => {
         playsInline
         className="absolute left-0 top-0 h-full w-full rotate-180 object-cover opacity-70"
       >
-        <source src="/triangle.mp4" type="video/mp4" />
+        <source src={"videos/triangle.mp4"} type="video/mp4" />
+        {/* <source src="/triangle.mp4" type="video/mp4" /> */}
       </video>
       <motion.div
         initial="hidden"
