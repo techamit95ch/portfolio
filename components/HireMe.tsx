@@ -2,7 +2,6 @@
 
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-import { CoffeeIcon, HandIcon } from "lucide-react";
 import { useEffect, useRef } from "react";
 
 gsap.registerPlugin(ScrollTrigger);
@@ -25,7 +24,7 @@ const HireMe = () => {
           end: "bottom center",
           scrub: true,
         },
-      },
+      }
     );
   }, []);
 
@@ -45,17 +44,16 @@ const HireMe = () => {
               href="#contact"
               className="flex-row- flex items-center rounded-full bg-white px-8 py-3 text-lg font-semibold text-purple-600 transition-all duration-300 hover:bg-gray-100 hover:shadow-lg"
             >
-              <HandIcon className="mr-2 h-5 w-5" />
               Hire Me
             </a>
+
             <a
-              href="#"
+              href="Amit Chakraborty React Native Dev.pdf"
               target="_blank"
               rel="noopener noreferrer"
               className="flex flex-row items-center rounded-full bg-white px-8 py-3 text-lg font-semibold text-purple-600 transition-all duration-300 hover:bg-gray-100 hover:shadow-lg"
             >
-              <CoffeeIcon className="mr-2 h-5 w-5" />
-              Buy me a coffee Later
+              Resume
             </a>
           </div>
         </div>
