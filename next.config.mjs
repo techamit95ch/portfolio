@@ -1,12 +1,14 @@
 const isGithubActions = process.env.GITHUB_ACTIONS || false;
 let assetPrefix = "";
 let basePath = "";
+const isProd = process.env.NODE_ENV === "production";
 
 if (isGithubActions) {
   // Use optional chaining to safely access GITHUB_REPOSITORY
   const repo = process.env.GITHUB_REPOSITORY?.replace(/.*?\//, "") || "";
-  assetPrefix = `/${repo}/`;
-  basePath = `/${repo}`;
+
+  assetPrefix = isProd ? "/" : `/${repo}/`;
+  basePath = isProd ? "/" : `/${repo}`;
 }
 
 /** @type {import('next').NextConfig} */
