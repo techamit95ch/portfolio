@@ -73,8 +73,8 @@ const OpenSourceStarters = () => {
           className="mySwiper"
         >
           {resumeData.additionalProjects.map((project, index) => (
-            <SwiperSlide key={project.name}>
-              <div className="flex h-full flex-col overflow-hidden rounded-lg bg-gray-800 shadow-lg">
+            <SwiperSlide key={project.name} className="flex flex-grow">
+              <div className="flex flex-col flex-1 overflow-hidden rounded-lg bg-gray-800 shadow-lg flex-grow">
                 <div
                   className={`h-24 bg-gradient-to-r md:h-32 ${
                     gradients[index % gradients.length]
@@ -99,7 +99,7 @@ const OpenSourceStarters = () => {
                   <h3 className="mb-2 truncate text-base font-semibold text-white md:text-lg">
                     {project.name}
                   </h3>
-                  <p className="mb-4 line-clamp-3 text-xs text-gray-400 md:text-sm">
+                  <p className="mb-4 text-xs text-gray-400 md:text-sm line-clamp-2	">
                     {project.description}
                   </p>
                 </div>

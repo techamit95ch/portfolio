@@ -259,7 +259,7 @@ const Projects: React.FC = () => {
   return (
     <section id="projects" className="relative">
       <h2 className="brand-font Welcome-text absolute left-1/2 top-4 z-30 -translate-x-1/2 transform text-2xl font-bold md:text-4xl">
-        Recent Projects (Office)
+        Recent Work
       </h2>
       <ParallaxCarousel />
     </section>

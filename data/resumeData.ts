@@ -191,6 +191,7 @@ export const resumeData = {
       ],
     },
     {
+      degree: "Higher Secondary",
       institution: "Rajpur Vidyanidhi High School",
       location: "Rajpore",
       level: "Higher Education",
@@ -198,9 +199,10 @@ export const resumeData = {
       status: "Completed",
     },
     {
+      degree: "Secondary",
       institution: "Harinavi D.V.A.S High School",
       location: "Harinavi",
-      level: "Basic Education",
+      level: "Secondary Education",
       status: "Completed",
     },
   ],
@@ -434,7 +436,7 @@ export const resumeData = {
     },
     {
       name: "Near Chain Based Application",
-      description: "Near block chain based app",
+      description: "Near block chain based app, learning near chain",
       github: "https://github.com/techamit95ch/literate-spork",
     },
     {
@@ -453,18 +455,20 @@ export const resumeData = {
     {
       name: "Merchant Distributor App",
       description:
-        "Enabled offline bill creation, particularly valuable for remote areas.",
+        "Enabled offline bill creation, particularly valuable for remote areas it was difficult.",
       github: "https://github.com/techamit95ch/merchantplatform",
     },
     {
       name: "Cryptoverse",
-      description: "Cryptocurrency information and tracking app",
+      description:
+        "Cryptocurrency information and tracking app, learning dapp explorer",
       url: "http://cryptoverse-amit.surge.sh",
       date: "Sep 2021",
     },
     {
       name: "Stack Exchange - React Native",
-      description: "A React Native app for Stack Exchange",
+      description:
+        "A React Native app for Stack Exchange, using stack exchange api, it was looking cool back then",
       url: "https://expo.dev/@amit98ch/stackExchange",
       github: "https://github.com/techamit95ch/stack_exchange",
       date: "Aug 2021",
@@ -472,7 +476,7 @@ export const resumeData = {
     {
       name: "React Native Books App",
       description:
-        "A book repository app built with React Native and Native Base",
+        "A book repository app built with React Native and Native Base, and other options",
       url: "https://expo.dev/@amit98ch/book-repo",
       github: "https://github.com/techamit95ch/booksRepo",
       date: "Aug 2021",
@@ -487,13 +491,15 @@ export const resumeData = {
     },
     {
       name: "Notes App",
-      description: "MERN Stack notes application",
+      description:
+        "MERN Stack notes application, to  organize college notes with video call feature like zoom.",
       github: "https://github.com/techamit95ch/notesapp",
       date: "Jun 2021",
     },
     {
       name: "Food Shala",
-      description: "Food ordering system built with Core PHP",
+      description:
+        "Food ordering system built with Core PHP, It's for teaching others",
       github: "https://github.com/techamit95ch/food_shala",
       date: "May 2021",
     },
@@ -505,7 +511,8 @@ export const resumeData = {
     },
     {
       name: "Next Amazon",
-      description: "Amazon clone built with Next.js",
+      description:
+        "Amazon clone built with Next.js, firebase redux saga and django. Primary goal was building app with ml model",
       github: "https://github.com/techamit95ch/next-amazon",
       date: "Aug 2021 - Present",
     },

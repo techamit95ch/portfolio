@@ -61,7 +61,7 @@ const Achievements = () => {
           {achievements.map((achievement, index) => (
             <motion.div
               key={index}
-              className="achievement-item rounded-lg p-6 backdrop-blur-3xl"
+              className="achievement-item flex flex-grow rounded-lg p-6 backdrop-blur-3xl"
             >
               <div className="gradient-border rounded-lg px-6 py-4 backdrop-blur-3xl">
                 <div className="absolute inset-0 z-0 rounded-full bg-gradient-to-r from-purple-950 via-[#0f0a1c8b] to-black opacity-10 blur-lg"></div>
