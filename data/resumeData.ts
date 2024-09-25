@@ -25,9 +25,9 @@ export const resumeData = {
     socialLinks: [
       "https://twitter.com/AmitCha92849022",
       "https://www.quora.com/profile/AMIT-CHAKRABORTY-247",
-      "https://stackoverflow.com/users/16936660/amit-chakraborty",
-      "https://app.slack.com/client/T9Y440GN8/D02DCRYHTCM/user_profile/U02D94H0M8E",
-      "https://www.instagram.com/def.amit",
+      // "https://stackoverflow.com/users/16936660/amit-chakraborty",
+      // "https://app.slack.com/client/T9Y440GN8/D02DCRYHTCM/user_profile/U02D94H0M8E",
+      // "https://www.instagram.com/def.amit",
     ],
   },
   professionalExperience: [
